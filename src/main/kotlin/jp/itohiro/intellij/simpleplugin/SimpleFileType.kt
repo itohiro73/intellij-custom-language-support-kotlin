@@ -1,3 +1,5 @@
+package jp.itohiro.intellij.simpleplugin
+
 import com.intellij.openapi.fileTypes.LanguageFileType
 import javax.swing.Icon
 

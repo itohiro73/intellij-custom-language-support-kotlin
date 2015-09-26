@@ -1,3 +1,5 @@
+package jp.itohiro.intellij.simpleplugin
+
 import com.intellij.openapi.util.IconLoader
 
 public class SimpleIcons {

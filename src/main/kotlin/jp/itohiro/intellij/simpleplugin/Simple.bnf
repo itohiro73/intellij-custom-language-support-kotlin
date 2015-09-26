@@ -1,0 +1,21 @@
+{
+    parserClass="jp.itohiro.intellij.simpleplugin.SimpleParser"
+
+    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+    psiClassPrefix="Simple"
+    psiImplClassSuffix="Impl"
+    psiPackage="jp.itohiro.intellij.simpleplugin.psi"
+    psiImplPackage="jp.itohiro.intellij.simpleplugin.psi.impl"
+
+    elementTypeHolderClass="jp.itohiro.intellij.simpleplugin.psi.SimpleTypes"
+    elementTypeClass="jp.itohiro.intellij.simpleplugin.psi.SimpleElementType"
+    tokenTypeClass="jp.itohiro.intellij.simpleplugin.psi.SimpleTokenType"
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
+

@@ -39,4 +39,6 @@ dependencies {
 
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin'
+    main.java.srcDirs += 'src/main/java'
+    main.java.srcDirs += 'gen'
 }

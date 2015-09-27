@@ -23,7 +23,8 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <fileTypeFactory implementation="SimpleFileTypeFactory"/>
+    <fileTypeFactory implementation="jp.itohiro.intellij.simpleplugin.SimpleFileTypeFactory"/>
+    <lang.parserDefinition language="Simple" implementationClass="jp.itohiro.intellij.simpleplugin.SimpleParserDefinition"/>
   </extensions>
 
   <application-components>

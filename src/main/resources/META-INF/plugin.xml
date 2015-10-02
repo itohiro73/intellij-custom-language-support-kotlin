@@ -26,6 +26,7 @@
     <fileTypeFactory implementation="jp.itohiro.intellij.simpleplugin.SimpleFileTypeFactory"/>
     <lang.parserDefinition language="Simple" implementationClass="jp.itohiro.intellij.simpleplugin.SimpleParserDefinition"/>
     <lang.syntaxHighlighterFactory key="Simple" implementationClass="jp.itohiro.intellij.simpleplugin.SimpleSyntaxHighlighterFactory"/>
+    <colorSettingsPage implementation="jp.itohiro.intellij.simpleplugin.SimpleColorSettingsPage"/>
   </extensions>
 
   <application-components>

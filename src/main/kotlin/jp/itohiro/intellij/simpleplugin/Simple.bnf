@@ -11,11 +11,12 @@
     elementTypeHolderClass="jp.itohiro.intellij.simpleplugin.psi.SimpleTypes"
     elementTypeClass="jp.itohiro.intellij.simpleplugin.psi.SimpleElementType"
     tokenTypeClass="jp.itohiro.intellij.simpleplugin.psi.SimpleTokenType"
+
+    psiImplUtilClass="jp.itohiro.intellij.simpleplugin.psi.impl.SimplePsiImplUtil"
 }
 
 simpleFile ::= item_*
 
 private item_ ::= (property|COMMENT|CRLF)
 
-property ::= (KEY? SEPARATOR VALUE?) | KEY
-
+property ::= (KEY? SEPARATOR VALUE?) | KEY {methods=[getKey getValue]}

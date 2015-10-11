@@ -26,9 +26,8 @@ public class SimpleUtil {
                     if(key == property.getKey()){
                         if (result == null) {
                             result = ArrayList<SimpleProperty>()
-                        } else {
-                            result?.add(property)
                         }
+                        result?.add(property)
                     }
                 }
             }

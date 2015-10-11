@@ -22,7 +22,7 @@ public class SimpleAnnotator: Annotator {
                     val annotation = holder.createInfoAnnotation(range, null)
                     annotation.textAttributes = DefaultLanguageHighlighterColors.LINE_COMMENT
                 } else if (properties?.size() == 0) {
-                    val range = TextRange(element.textRange.startOffset, element.textRange.startOffset + 8)
+                    val range = TextRange( element.textRange.startOffset + 8, element.textRange.endOffset)
                     holder.createErrorAnnotation(range, "Unresolved property")
                 }
             }

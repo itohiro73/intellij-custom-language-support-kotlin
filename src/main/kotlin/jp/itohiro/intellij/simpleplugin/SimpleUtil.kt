@@ -13,7 +13,7 @@ import java.util.*
 public class SimpleUtil {
     companion object {
         @JvmStatic
-        fun findProperties(project: Project, key: String): List<SimpleProperty>?{
+        fun findProperties(project: Project, key: String): List<SimpleProperty>{
             var result: MutableList<SimpleProperty>? = null
             val virtualFiles: Collection<VirtualFile> = FileBasedIndex.getInstance().getContainingFiles(
                     FileTypeIndex.NAME,
@@ -31,7 +31,7 @@ public class SimpleUtil {
                     }
                 }
             }
-            return if (result != null) result?.toList() else Collections.EMPTY_LIST as List<SimpleProperty>?
+            return if (result != null) result?.toList() as List<SimpleProperty> else Collections.EMPTY_LIST as List<SimpleProperty>
         }
 
 
